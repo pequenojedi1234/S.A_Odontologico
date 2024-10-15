@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro do Profissional</title>
+    <link rel="stylesheet" href="../Styles/StyleCadastro.css">
+    <link rel="stylesheet" href="../Styles/StylePesquisa.css">
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1600px;
+    margin: auto;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.top-bar {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 10px;
+}
+
+.search-bar {
+    flex: 1;
+    padding: 5px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+.status-dropdown {
+    padding: 5px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+.total {
+    margin-left: auto;
+    font-weight: bold;
+}
+
+.form-section {
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.professional-form {
+    display: flex;
+    gap: 20px;
+}
+
+.left-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.image-placeholder {
+    width: 150px;
+    height: 150px;
+    background: #e0e0e0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #777;
+}
+
+.right-section {
+    flex: 1;
+}
+
+.right-section label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.right-section input,
+.right-section select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.toggle-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.btn {
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background-color: #4CAF50;
+    color: #fff;
+}
+
+.btn-secondary {
+    background-color: #00BFFF;
+    color: #fff;
+}
+
+.btn-danger {
+    background-color: #FF6347;
+    color: #fff;
+}
+
+.btn-add {
+    background-color: #007BFF;
+    color: #fff;
+}
+
+.btn-delete {
+    background-color: #FF6347;
+    color: #fff;
+}
+
+.btn-toggle {
+    background: #ddd;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding: 5px 15px;
+}
+
+.btn-toggle.active {
+    background: #4CAF50;
+    color: #fff;
+}
+
+.form-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.last-access {
+    margin-top: 20px;
+}
+
+select.estados {
+    width: 150px !important;
+}
+
+div.pequeno {
+    width: 150px;
+}
+
+div.nome {
+    display: flex; 
+    gap: 10px; 
+    width: 1000px;
+}
+
+label.pequeno {
+    width: 150px;
+}
+
+input.pequeno {
+    width: 150px;
+}
+
+
+    </style>
+</head>
+<body>
+    <img src="../img/logo.png" class="logo" alt="Logo">
+    
+    <div class="menu">
+        <div class="item">
+            <a href="#" class="link">
+                <span> Menu </span>
+                <svg viewBox="0 0 360 360" xml:space="preserve">
+                    <g id="SVGRepo_iconCarrier">
+                        <path
+                            id="XMLID_225_"
+                            d="M325.607,79.393c-5.857-5.857-15.355-5.858-21.213,0.001l-139.39,139.393L25.607,79.393 c-5.857-5.857-15.355-5.858-21.213,0.001c-5.858,5.858-5.858,15.355,0,21.213l150.004,150c2.813,2.813,6.628,4.393,10.606,4.393 s7.794-1.581,10.606-4.394l149.996-150C331.465,94.749,331.465,85.251,325.607,79.393z"
+                        ></path>
+                    </g>
+                </svg>
+            </a>
+            <div align="right" class="submenu">
+                <div class="submenu-item">
+                <a href="Cadastro_Funcionarios.html" class="submenu-link">Cadastro de Funcionarios</a>
+                </div>
+                <div class="submenu-item">
+                <a href="Cadastro_cliente.html" class="submenu-link"> Cadastro de Clientes </a>
+                </div>
+                <div class="submenu-item">
+                  <a href="HomeADM.html" class="submenu-link"> HOME </a>
+                </div>
+                <div class="submenu-item">
+                <a href="../Tela_Geral/Login.php" class="submenu-link"> Sair </a>
+                </div>
+              </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="container">
+
+         
+<div class="input-container">
+  <input placeholder="Pesquisar Funcionario" class="input-field" type="text">
+  <label for="input-field" class="input-label">Nome:</label>
+  <span class="input-highlight"></span>
+</div>
+
+        </div>
+<br>
+        <div class="container">
+        <div class="form-section">
+            <h2>Cadastro do Profissional</h2>
+            <form class="professional-form">
+                <div class="left-section">
+                    <div class="image-placeholder">no image</div>
+                    <button class="btn btn-add">+ Adicionar</button>
+                    <button class="btn btn-delete">Excluir</button>
+                </div>
+
+                <div class="right-section">
+                    <div style="width: 600px;">
+                    <label>Nome do Profissional*</label>
+                    <input type="text" placeholder="Santiago" required>
+                </div>
+                <div style="align-items: center; width: 600px; display: flex; gap: 10px;">
+                        <label class="pequeno">Sexo*</label>
+                        <select required>
+                            <option value="Masculino">Masculino</option>
+                            <option value="Feminino">Feminino</option>
+                    </select>
+                    <label class="cpf">CPF*</label>
+                    <input type="text" placeholder="000.000.000-00" maxlength="14" required>
+
+                    <label>Senha</label>
+                    <input type="text" placeholder="********">
+                    </div>
+                             
+                    <label>Email*</label>
+                    <input style="width: 600px;"type="email" placeholder="contato@simpleexmplo.com" required>
+                    
+                    <div>
+                    <label >Data de Nascimento*</label>
+                    <input class="pequeno" type="date" required>
+                </div>
+                    <div style="display: flex; gap: 10px;">
+                    <label>Estado*</label>
+                    <select class="estados" id="estado" required>
+                        <option value="AC">Acre</option>
+                        <option value="AL">Alagoas</option>
+                        <option value="AP">Amapá</option>
+                        <option value="AM">Amazonas</option>
+                        <option value="BA">Bahia</option>
+                        <option value="CE">Ceará</option>
+                        <option value="DF">Distrito Federal</option>
+                        <option value="ES">Espírito Santo</option>
+                        <option value="GO">Goiás</option>
+                        <option value="MA">Maranhão</option>
+                        <option value="MT">Mato Grosso</option>
+                        <option value="MS">Mato Grosso do Sul</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="PA">Pará</option>
+                        <option value="PB">Paraíba</option>
+                        <option value="PR">Paraná</option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="PI">Piauí</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                        <option value="RO">Rondônia</option>
+                        <option value="RR">Roraima</option>
+                        <option value="SC">Santa Catarina</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="SE">Sergipe</option>
+                        <option value="TO">Tocantins</option>
+                    </select>
+
+                    <label>Cidade*</label>
+                    <input type="text" required>
+
+                </div>
+                    
+
+                    <label>Bairro*</label>
+                    <input type="text" required>
+
+                    <label>Rua*</label>
+                    <input type="text" required>
+
+                    <label>N°*</label>
+                    <input type="number" required>
+
+                    <label>CEP*</label>
+                    <input type="text" id="cep" required>
+
+                    <label>Cargo*</label>
+                    <input type="text" placeholder="ex: secretario"required>
+                    
+                    
+                    <label>Grupo de Acesso</label>
+                    <select>
+                        <option value="administrador">Administrador</option>
+                        <option value="secretario">secretario</option>
+                    </select>
+                    
+                    
+
+                    <div class="last-access">
+                        <p id="lastModified"></p>
+
+    <!-- <script>
+        document.getElementById('lastModified').textContent = 'Última modificação em: ' + document.lastModified;
+    </script> -->
+                    </div>
+                </div>
+            </form>
+            <div class="form-buttons">
+                <button class="btn btn-primary">Salvar</button>
+                <button class="btn btn-danger">Excluir</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
